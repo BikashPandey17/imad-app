@@ -9,8 +9,24 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/tribute.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tribute.html'));
+});
+
+app.get('/profile.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+});
+
+app.get('/ui/tribute.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tribute.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+app.get('/ui/style2.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
