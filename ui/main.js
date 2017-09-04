@@ -5,6 +5,13 @@ element.innerHTML = 'New HTML';
 
 //move the image
 var element = document.getElementById('madi');
+marginleft=0;
+function moveRight(){
+    marginLeft=marginLeft+10;
+    madi.style.marginLeft=marginLeft+'px';
+}
+
 madi.onclick=function(){
-   madi.style.marginLeft='100px';
+   var interval = setInterval(moveRight,100); 
+  // madi.style.marginLeft='100px';
 }
