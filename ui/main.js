@@ -7,7 +7,7 @@ element.innerHTML = 'New HTML';
 var element = document.getElementById('madi');
 marginLeft=0;
 function moveRight(){
-    marginLeft = marginLeft + 10;
+    marginLeft = marginLeft + 2;
     madi.style.marginLeft = marginLeft + 'px';
 }
 
